@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style3.css">
+
+		<title>Document</title>
+	</head>
+	<body>
+
+		<h1>Liste des employées</h1>
+
+		{% for employee in employees %}
+			<div class="list">
+				<p>
+					<span>Nom:</span>
+					{{employee.name}}</p>
+
+				<div class="picture">
+					<img src="./upload/{{employee.photo}}">
+				</div>
+				<p>
+					<span>Blame:</span>
+					{{employee.blame}}</p>
+
+				<p>
+					<span>Fonction:</span>
+					{{employee.fonction}}</p>
+
+				<div class="button">
+					<form action="/delete/{{employee._id}}" method="GET">
+						<button type="submit" class="delete">Supprimer</button>
+					</form>
+
+					<form action="/edit/{{employee._id}}" method="GET">
+						<button type="submit" class="edit">Modifier</button>
+					</form>
+
+					<form action="/blame/{{employee._id}}" method="GET">
+						<button type="submit" class="blam">Blamer</button>
+					</form>
+				</div>
+			</div>
+		{% endfor %}
+
+
+		<a href="/addemployee">Ajouter un employée</a>
+
+
+	</body>
+</html>

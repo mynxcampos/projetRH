@@ -1,0 +1,75 @@
+body {
+    background-color: #354152;
+    font-family: cursive;
+
+}
+
+h1 {
+    color: #1abbd4;
+    text-align: center;
+    font-size: 3rem;
+}
+
+form {
+    background: linear-gradient(#058A9F, #49AE93);
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 525px;
+    min-height: 450px;
+    position: relative;
+    border-radius: 5vh;
+    box-shadow: 2px 3px 5px 1px rgb(233, 235, 230);
+}
+
+.label {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 90px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+.label-pass {
+    color: #ffffff;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.login-submit {
+    border-radius: 5px;
+    width: 130px;
+    height: 30px;
+    background-color: #354152b1;
+    border: none;
+}
+
+.button-text {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.signIn {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}

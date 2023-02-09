@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Document</title>
+	</head>
+	<body>
+
+		<h1>Ajouter un employée</h1>
+
+		<form action="/edit/{{id}}" method="POST" enctype="multipart/form-data">
+			<label for="name">Nom de l'employée:</label>
+			<input type="text" id="name" name="name" autocomplete="off">
+
+			<label for="photo">Photo:</label>
+			<input type="file" id="photo" name="photo" autocomplete="off">
+
+			<label for="fonction">Fonction:</label>
+			<input type="text" id="fonction" name="fonction" autocomplete="off">
+
+			<label for="blame">Ajouter un blame:</label>
+			<input type="number" id="blame" name="blame" autocomplete="off">
+
+
+			<button type="submit">VALIDER</button>
+		</form>
+
+
+		<a href=""></a>
+
+
+	</body>
+</html>
